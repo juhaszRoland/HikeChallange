@@ -1,0 +1,17 @@
+  <div class="hike-result">
+    <div class="hike-result">
+      <div class="hike-header">
+        <div>
+          <h2>{{ hike.name }}</h2>
+          <p><strong>Indulási hely:</strong>{{ hike.from }}</p>
+          <p><strong>Dátum:</strong>{{ hike.date }}</p>
+        </div>
+        <img [src]="hike.image" [alt]="hike.name" />
+      </div>
+
+      <div class="hike-info">
+        <h3>További információk:</h3>
+        {{ hike.info }}
+      </div>
+    </div>
+  </div>

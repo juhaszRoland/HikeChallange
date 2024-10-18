@@ -1,0 +1,14 @@
+<h2>The best walks and hikes in Hungary</h2>
+<div class="teszt">
+  @for (item of challenges; track $index) {
+  <div class="teszt2">
+    <div><img [src]="item.image" [alt]="item.name" /></div>
+    <div id="itemName">{{ item.name }}</div>
+    <div><button (click)="addItem(item)">Megnézem</button></div>
+  </div>
+  }
+</div>
+
+@if (currentHike) {
+  <app-hike-items [hike]="currentHike"></app-hike-items>
+}

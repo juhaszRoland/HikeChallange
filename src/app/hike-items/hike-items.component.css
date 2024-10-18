@@ -1,0 +1,142 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  text-align: center;
+}
+
+.teszt {
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 400px;
+  background-color: lightblue;
+  display: flex;
+  overflow-x: auto;
+}
+
+.teszt2 {
+  text-align: center;
+}
+
+img {
+  height: 190px;
+  width: 400px;
+  margin: 0 10px;
+}
+
+#itemName {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  text-shadow: 1px 1px red;
+}
+
+.teszt2 button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  margin: 20px 0;
+  font-size: 16px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
+}
+
+.hike-result {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.hike-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hike-header img {
+  max-width: 150px;
+  border-radius: 5px;
+}
+
+.hike-info {
+  padding: 10px 0;
+}
+
+.hike-info p {
+  margin: 5px 0;
+}
+
+.hike-details {
+  margin-top: 20px;
+}
+
+.hike-details table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.hike-details th,
+.hike-details td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hike-details th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.hike-details tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.hike-info-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.hike-info-list li {
+  margin-bottom: 5px;
+}
+
+.eddigiNevezesDij {
+  color: white;
+  text-align: center;
+  border: 2px solid rgb(134, 56, 56);
+  ;
+  background-color: rgb(134, 56, 56);
+  padding: 10px;
+  border-radius: 60px;
+  width: 400px;
+  justify-content: center;
+}
+
+.nevezesidij {
+  display: flex;
+  justify-content: center;
+}
