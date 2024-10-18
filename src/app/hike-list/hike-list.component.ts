@@ -7,8 +7,12 @@ import { ChallenegeModel } from '../models/hike.model';
   styleUrl: './hike-list.component.css',
 })
 export class HikeListComponent {
+calculate() {
+throw new Error('Method not implemented.');
+}
   currentHike: ChallenegeModel | undefined;
   distances: any[] = [];
+productsInCard: any;
 
   addItem(item: ChallenegeModel) {
     this.currentHike = JSON.parse(JSON.stringify(item));
