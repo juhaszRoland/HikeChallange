@@ -4,7 +4,8 @@
   <div class="teszt2">
     <div><img [src]="item.image" [alt]="item.name" /></div>
     <div id="itemName">{{ item.name }}</div>
-    <div><button (click)="addItem(item)">Megnézem</button></div>
+    <div id="itemText" class="text-cut">{{ item.info }}</div>
+    <div class="addBtn"><button (click)="addItem(item)">Megnézem</button></div>
   </div>
   }
 </div>

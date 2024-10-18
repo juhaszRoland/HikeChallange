@@ -8,4 +8,5 @@ import { ChallenegeModel } from '../models/hike.model';
 })
 export class HikeItemsComponent {
   @Input() hike!: ChallenegeModel;
+  @Input() distances: any[] = [];
 }

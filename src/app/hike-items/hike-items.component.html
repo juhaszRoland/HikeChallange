@@ -1,17 +1,40 @@
-  <div class="hike-result">
-    <div class="hike-result">
+<div class="hike-result">
       <div class="hike-header">
         <div>
           <h2>{{ hike.name }}</h2>
           <p><strong>Indulási hely:</strong>{{ hike.from }}</p>
           <p><strong>Dátum:</strong>{{ hike.date }}</p>
+          <p><strong>Ár:</strong> <br><br></p>
         </div>
         <img [src]="hike.image" [alt]="hike.name" />
+      </div>
+      <div class="chooseDistance">
+        <p *ngFor="let distance of hike.distances"><button>{{distance.fee}} FT</button><br>{{distance.distance}} KM</p>
       </div>
 
       <div class="hike-info">
         <h3>További információk:</h3>
         {{ hike.info }}
       </div>
+
+      <table class="distance-table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Distance (km)</th>
+      <th>Fee (HUF)</th>
+      <th>Level (m)</th>
+      <th>Max Time (h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let distance of hike.distances">
+      <td>{{distance.name}}</td>
+      <td>{{distance.distance}}</td>
+      <td>{{distance.fee}}</td>
+      <td>{{distance.level}}</td>
+      <td>{{distance.maxtime}}</td>
+    </tr>
+  </tbody>
+</table>
     </div>
-  </div>

@@ -1,11 +1,9 @@
-body {
-  margin: 0;
-  height: 100vh;
-  overflow: hidden;
-}
 
-h1 {
+h2 {
   text-align: center;
+  color: rgb(189, 167, 167);
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .teszt {
@@ -13,13 +11,20 @@ h1 {
   left: 0;
   right: 0;
   height: 400px;
-  background-color: lightblue;
+  background-color: #AC8968;
   display: flex;
   overflow-x: auto;
 }
 
 .teszt2 {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* Felfelé növekvő irányban helyezkedik el */
+  justify-content: space-between;
+  /* A tartalmat elosztja a rendelkezésre álló helyen */
+  height: 100%;
+  /* Vagy a kívánt magasság */
+  margin: 0 10px;
 }
 
 img{
@@ -30,13 +35,13 @@ img{
 
 #itemName {
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: #3E362E;
+  font-weight: bold;
   font-size: 1.5rem;
-  text-shadow: 1px 1px red;
 }
 
 .teszt2 button {
-background-color: #4CAF50;
+  background-color: rgb(134, 56, 56);
   color: white;
   padding: 10px 15px;
   margin: 20px 0;
@@ -58,84 +63,33 @@ background-color: #3e8e41;
 transform: scale(0.98);
 }
 
-.hike-result {
-width: 100%;
-max-width: 800px;
-margin: 20px auto;
-background-color: #f9f9f9;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-padding: 20px;
-font-family: Arial, sans-serif;
-}
-
-.hike-header {
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding-bottom: 15px;
-border-bottom: 1px solid #ddd;
-}
-
-.hike-header img {
-max-width: 150px;
-border-radius: 5px;
-}
-
-.hike-info {
-padding: 10px 0;
-}
-
-.hike-info p {
-margin: 5px 0;
-}
-
-.hike-details {
-margin-top: 20px;
-}
-
-.hike-details table {
-width: 100%;
-border-collapse: collapse;
-text-align: left;
-}
-
-.hike-details th,
-.hike-details td {
-padding: 10px;
-border-bottom: 1px solid #ddd;
-}
-
-.hike-details th {
-background-color: #4CAF50;
-color: white;
-}
-
-.hike-details tbody tr:nth-child(even) {
-background-color: #f2f2f2;
-}
-
-.hike-info-list {
-list-style-type: disc;
-padding-left: 20px;
-}
-
-.hike-info-list li {
-margin-bottom: 5px;
-}
-
 .eddigiNevezesDij {
   color: white;
   text-align: center;
-  border: 2px solid rgb(134, 56, 56);;
+  border: 2px solid rgb(134, 56, 56);
   background-color: rgb(134, 56, 56);
   padding: 10px;
   border-radius: 60px;
   width: 400px;
   justify-content: center;
+  font-size: 1.2rem;
 }
 
 .nevezesidij {
   display: flex;
   justify-content: center;
+  margin: 20px;
+}
+
+.addBtn {
+  text-align: center;
+}
+
+.text-cut {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
 }

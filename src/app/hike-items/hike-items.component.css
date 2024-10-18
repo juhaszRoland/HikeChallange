@@ -1,41 +1,6 @@
-body {
-  margin: 0;
-  height: 100vh;
-  overflow: hidden;
-}
 
-h1 {
-  text-align: center;
-}
 
-.teszt {
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 400px;
-  background-color: lightblue;
-  display: flex;
-  overflow-x: auto;
-}
-
-.teszt2 {
-  text-align: center;
-}
-
-img {
-  height: 190px;
-  width: 400px;
-  margin: 0 10px;
-}
-
-#itemName {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  font-size: 1.5rem;
-  text-shadow: 1px 1px red;
-}
-
-.teszt2 button {
+button {
   background-color: #4CAF50;
   color: white;
   padding: 10px 15px;
@@ -124,19 +89,40 @@ button:active {
   margin-bottom: 5px;
 }
 
-.eddigiNevezesDij {
-  color: white;
-  text-align: center;
-  border: 2px solid rgb(134, 56, 56);
-  ;
-  background-color: rgb(134, 56, 56);
-  padding: 10px;
-  border-radius: 60px;
-  width: 400px;
-  justify-content: center;
+.distance-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
 }
 
-.nevezesidij {
+.distance-table th,
+.distance-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.distance-table th {
+  background-color: #f4f4f4;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.distance-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.distance-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.distance-table td {
+  text-align: center;
+}
+
+.chooseDistance {
   display: flex;
-  justify-content: center;
+  align-items: end;
+  justify-content: space-between;
 }
