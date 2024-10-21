@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ChallenegeModel } from '../models/hike.model';
+import { DistanceModel } from '../models/distance.model';
 
 @Component({
   selector: 'app-hike-list',
@@ -7,20 +8,24 @@ import { ChallenegeModel } from '../models/hike.model';
   styleUrl: './hike-list.component.css',
 })
 export class HikeListComponent {
-calculate() {
-throw new Error('Method not implemented.');
-}
   currentHike: ChallenegeModel | undefined;
   distances: any[] = [];
-productsInCard: any;
+  distancess: DistanceModel[] = [];
+  productsInCard: any;
 
   addItem(item: ChallenegeModel) {
     this.currentHike = JSON.parse(JSON.stringify(item));
+    this.calculate();
   }
 
-  getShortInfo(info: string): string {
-    return info.slice(0, Math.ceil(info.length / 4));
+  sumTotal: number = 0;
+  calculate() {
+    this.sumTotal = 0;
+    this.distancess.forEach((e) => {
+      this.sumTotal += e.fee;
+    });
   }
+
   challenges: ChallenegeModel[] = [
     {
       name: 'Írottkő - 50 / 35 / 20',
