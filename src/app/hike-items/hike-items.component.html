@@ -8,7 +8,7 @@
         <img [src]="hike.image" [alt]="hike.name" />
       </div>
       <div class="chooseDistance">
-        <p *ngFor="let distance of hike.distances"><button>{{distance.fee}} FT</button><br>{{distance.distance}} KM</p>
+        <p *ngFor="let distance of hike.distances"><button>{{distance.fee}} FT</button><br>{{distance.distance}} KM</p> <!--Ez a gomb adja hozzá az árat-->
       </div>
 
       <div class="hike-info">

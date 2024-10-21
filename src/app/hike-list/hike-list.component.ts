@@ -18,6 +18,7 @@ export class HikeListComponent {
     this.calculate();
   }
 
+  //Ez a függvény szeretett volna lenni, ami nem működik
   sumTotal: number = 0;
   calculate() {
     this.sumTotal = 0;
@@ -25,6 +26,7 @@ export class HikeListComponent {
       this.sumTotal += e.fee;
     });
   }
+
 
   challenges: ChallenegeModel[] = [
     {
